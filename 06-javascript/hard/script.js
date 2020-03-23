@@ -7,7 +7,7 @@ function addition (x, y){
     return (x + y);
 
 }
-console.log(addition(x, y ));
+console.log(addition(x, y));
 
 //subtract
 function subtraction (x, y){

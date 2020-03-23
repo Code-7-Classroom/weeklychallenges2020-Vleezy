@@ -5,7 +5,7 @@ var _name = prompt("What's your name? ");
 if ( _name == _name.toLowerCase()) {
   //shows on webpage
    document.getElementById("test").innerHTML =( _name + ' you are whispering..');
-   //ahows on console
+   //shows on console
   console.log( _name + ' you are whispering..');
 
   } else if ( _name == _name.toUpperCase()) {

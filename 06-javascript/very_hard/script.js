@@ -1,8 +1,9 @@
 //variables being prompted
-var _numOne = parseInt(prompt("Enter first number here."));
-var _operator = prompt("Enter operator");
-var _numTwo = parseInt(prompt("Enter second number here."));
-var _answer = null;
+var _numOne ,_operator ,_numTwo ,_answer; 
+_numOne = parseInt(prompt("Enter first number here."));
+_operator = prompt("Enter operator");
+_numTwo = parseInt(prompt("Enter second number here."));
+_answer = null;
 
 // Something to test out in the future
 // if (_numOne !== null && _numOne !== parseINt(_numOne)){

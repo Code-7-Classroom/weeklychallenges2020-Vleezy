@@ -8,6 +8,7 @@
 .slide__img{
     width:100%;
     height: 500px;
+        object-fit: cover;
 }
 
 .slide__container--2{
@@ -18,6 +19,7 @@
 .slide__img--2{
     width:100%;
     height: 500px;
+        object-fit: cover;
 }
 @media only screen and (min-width: 800px) {
    

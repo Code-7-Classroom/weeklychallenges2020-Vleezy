@@ -14,14 +14,14 @@ function changeImg(){
 
 // SECOND SLIDER
 
-    var i = 0, images2, time2; //start
+    var x = 0, images2, time2; //start
     images2 =['product_cookies/cookie_1.jpg','product_cookies/cookie_3.jpg','product_cookies/cookie_13.jpg','product_cookies/cookie_5.jpg'];
     time2 = 2000;
   
   function changeImg2(){
-           document.slide2.src = images2[i];
-          i++;
-          if (i == images2.length) { i = 0; }
+           document.slide2.src = images2[x];
+          x++;
+          if (x == images2.length) { x = 0; }
           setTimeout("changeImg2()", time2);
       }
       changeImg2();

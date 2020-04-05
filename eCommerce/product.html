@@ -55,7 +55,7 @@
     <div class="collection__sort">
       <div id="myBtnContainer">
         <p class="filter__text">Filter:</p>
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn " onclick="filterSelection('all')"> Show all</button>
         <button class="btn" onclick="filterSelection('high')"> High</button>
         <button class="btn" onclick="filterSelection('low')"> Low</button>
         <button class="btn" onclick="filterSelection('chocolate')"> Chocolate</button>
@@ -273,7 +273,7 @@
     for (var i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function () {
         var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
+        current[0].className = current[0].className.replace("active", "");
         this.className += " active";
       });
     }

@@ -27,7 +27,6 @@ function changeImg(){
       changeImg2();
   
 
-
 //CONTACT_FORM VALIDATION
 
 

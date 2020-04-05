@@ -1,6 +1,7 @@
-var run = exercise('running');
+var run, swim;
+run = exercise('running');
 console.log(run()); 
-var swim = exercise('swimming');
+swim = exercise('swimming');
 console.log(swim()); 
 
 function exercise(activity){

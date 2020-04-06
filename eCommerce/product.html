@@ -51,8 +51,8 @@
         </select>
       </div> -->
 
-
-    <div class="collection__sort">
+      <!--Filter Buttons-->
+    <!-- <div class="collection__sort"> -->
       <div id="myBtnContainer">
         <p class="filter__text">Filter:</p>
         <button class="btn " onclick="filterSelection('all')"> Show all</button>
@@ -65,7 +65,7 @@
     </div>
   </section>
 
-
+  <!--Products Cards-->
   <div class="container">
     <section class="products">
 
@@ -244,7 +244,7 @@
         if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
       }
     }
-
+    /* Show filtered elements*/
     function addClass(element, name) {
       var i, arr1, arr2;
       arr1 = element.className.split(" ");
@@ -255,7 +255,7 @@
         }
       }
     }
-
+    /* Hide elements that are not selected*/  
     function removeClass(element, name) {
       var i, arr1, arr2;
       arr1 = element.className.split(" ");
@@ -268,6 +268,7 @@
       element.className = arr1.join(" ");
     }
 
+    /*Add active class to the current control button (highlight it)*/
     var btnContainer = document.getElementById("myBtnContainer");
     var btns = btnContainer.getElementsByClassName("btn");
     for (var i = 0; i < btns.length; i++) {

@@ -1,3 +1,5 @@
+/*Responsive css flexbox*/
+
 h5,h6{
     font-size: 20px;
 }
@@ -37,21 +39,24 @@ height:300px;
   }
 /*  .sort {
      display: flex;
-   }*/
+   }
   .collection__sort {
     display: flex;
     flex-direction: column;
-  }
+  }  */
+
+  /*Flex Container for the cards allows for horizontal in new rows*/
   .products {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
   }
   
-  /*flex-grow helps to fill my space*/
+  /*flex-grow helps to fill my space trying to make 5 per row */
   .product__card {
     padding: 2%;
     flex-grow: 1;
+    /*initial length of flexible item*/
     flex-basis: 16%;
     text-align:center;
     background-color:rgba(0, 0, 0, 0.50);
@@ -59,22 +64,28 @@ height:300px;
   
     /* display: flex;  so child elements can use flexbox stuff too! */
   }
+  /*for images to fit within*/
   .product__image img {
     max-width: 280px;
   margin: auto;
   text-align: center;
   border-radius:10%;
   }
+  /* aligning desc to bottom*/
   .product__info {
     margin-top: auto;
     background-color:rgba(0, 0, 0, 0.60);
     border-radius:10px;
   }
+
+  /* for when there are less cards*/
   .products .product__card:first-child, 
   .products .product__card:nth-child(2) {
     flex: 2 46%;
   }
+
   @media (max-width: 600px) {
+    /* less cards per row / making a column */
     .product__card {
       flex: 1 46%;
     }
@@ -102,11 +113,11 @@ height:300px;
     display: none; 
 
     padding: 2%;
-flex-grow: 1;
-flex-basis: 16%;
-text-align:center;
-background-color: #25180fb2;
-border-radius: 1px;
+    flex-grow: 1;
+    flex-basis: 16%;
+    text-align:center;
+    background-color: #25180fb2;
+    border-radius: 1px;
   }
   
 

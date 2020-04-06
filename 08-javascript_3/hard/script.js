@@ -1,17 +1,17 @@
-var Pii= (function(ssn, name){
+var Pii= (function(){
     var ssn='1234567';
     return{
         name:"John Doe",
         get ssn(){
             return _ssn;
         },
-        set ssn(_silent){
-            _ssn = _silent;
+        set ssn(_x){
+            _ssn = _x;
         }
     }
   })();
   
   console.log(Pii.name)
   Pii.ssn = "SSN not accessible";
-  alert( Pii.ssn);
+  console.log( Pii.ssn);
  

@@ -708,9 +708,6 @@ body {
 
 .body__container {
   background: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
-}
-
-.body__container {
   height: 200px;
 }
 

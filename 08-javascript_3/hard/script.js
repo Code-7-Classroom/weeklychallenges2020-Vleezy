@@ -1,4 +1,4 @@
-var Pii= (function(){
+var Pii= (function(ssn, name){
     var ssn='1234567';
     return{
         name:"John Doe",
@@ -10,11 +10,8 @@ var Pii= (function(){
         }
     }
   })();
-  for(var person in Pii){
-      console.log(person);
-  }
+  
   console.log(Pii.name)
   Pii.ssn = "SSN not accessible";
-  console.log( Pii.ssn);
-  // alert(Pii.name);
+  alert( Pii.ssn);
  

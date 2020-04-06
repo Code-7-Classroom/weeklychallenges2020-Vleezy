@@ -1,15 +1,16 @@
 // FIRST SLIDERS
 
 var i = 0, images, time; //start
-  images =['test_1.jpg','test_2.jpg','test_3.jpg','test_4.jpg'];
+  images =['test_1.jpg','test_2.jpg','test_3.jpg','test_4.jpg']; 
   time = 2000;
 
 function changeImg(){
          document.slide.src = images[i];
         i++;
         if (i == images.length) { i = 0 };
-        setTimeout("changeImg()", time);
+        setTimeout("changeImg()", time); // Change image every 2 sec
     }
+    // tells it to run function
     changeImg();
 
 // SECOND SLIDER
@@ -32,13 +33,13 @@ function changeImg(){
 
 function VForm()                                    
 { 
-    var name = document.forms["FormJS"]["Name"];               
+    var name = document.forms["FormJS"]["Name"];         // name = form element (FormJS)  Input (Name)    
     var email = document.forms["FormJS"]["Email"];     
    
     if (name.value == "")                                  
     { 
         window.alert("Please enter your name."); 
-        name.focus(); 
+        name.focus(); //HTML DOM focus() gives focus to element
         return false; 
     }
        

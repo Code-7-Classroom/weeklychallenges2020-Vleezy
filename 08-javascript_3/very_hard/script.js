@@ -1,11 +1,6 @@
 //function constructor
-var yulie = {
-    name: "Yulie",
-    job: "Lawyer",
-    age: 20
-  };
-  
-  var Person = function(name,job, age){
+
+var Person = function(name,job, age){
     this.name = name;
     this.job = job;
     this.age = age;
@@ -47,23 +42,37 @@ var yulie = {
           this.busy = true;
       };
   
-      Programmer.prototype.CompleteTask =
+      Programmer.prototype.completeTask =
   function(){
-    return 
     this.busy = false;
   };
   
    Programmer.prototype.acceptNewTask =
   function(){
-    return 
     this.busy = true;
   };
   
   Programmer.prototype.offerNewTask =
   function(){
-  if (this.busy){
+  if (this.busy == true){
     console.log(`${this.name} is busy at the moment.`);
   }else{
     console.log(`${this.name} is available at the moment.`);
   }
   };
+  
+  Programmer.prototype.listLanguage = function(){
+      console.log(this.languages)
+  }
+  
+  Programmer.prototype.learnLanguage = function(learn){
+      this.languages.push(learn);
+  }
+  
+  var mark = new Programmer("Mark","programmer", 20, ["HTML", "CSS"], true );
+  
+  console.log(mark);
+  mark.learnLanguage('JS');
+  console.log(mark);
+  console.log(mark.offerNewTask());
+

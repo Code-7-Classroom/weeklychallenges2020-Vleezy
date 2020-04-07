@@ -70,7 +70,7 @@ var Person = function(name,job, age){
   }
   
   var mark = new Programmer("Mark","programmer", 20, ["HTML", "CSS"], true );
-  var mike = new Person("Mike","programmer", 20, ["HTML", "CSS"], true )
+  var mike = new Person("Mike","programmer", 20);
   
   console.log(mark);
   mark.learnLanguage('JS');

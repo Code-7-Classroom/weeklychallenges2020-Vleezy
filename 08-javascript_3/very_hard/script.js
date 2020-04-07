@@ -70,9 +70,11 @@ var Person = function(name,job, age){
   }
   
   var mark = new Programmer("Mark","programmer", 20, ["HTML", "CSS"], true );
+  var mike = new Person("Mike","programmer", 20, ["HTML", "CSS"], true )
   
   console.log(mark);
   mark.learnLanguage('JS');
   console.log(mark);
   console.log(mark.offerNewTask());
-
+  console.log(mike.fetchJob());
+  console.log(mike.run());

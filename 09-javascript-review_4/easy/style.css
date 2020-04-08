@@ -5,13 +5,15 @@
 display:grid;
 grid-template-columns: auto;
 }
-
+html{
+    background-color: seashell;
+}
 img{
     width: 100%;
 }
 .block{
     animation: rainbow-text 1s infinite;
-    background-color: rgba(128, 128, 128, 0.514);
+    background-color: rgba(128, 128, 128, 0.644);
     border:2px black solid;
     color:white;
     border-top-left-radius:50%;

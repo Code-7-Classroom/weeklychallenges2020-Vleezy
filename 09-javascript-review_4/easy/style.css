@@ -1,0 +1,15 @@
+.container{
+display:flex;
+justify-content: center;
+}
+img{
+    width: 45%;
+}
+.block{
+    background-color: gray;
+    color:white;
+    height:25em;
+}
+p{
+    text-align:center;
+}

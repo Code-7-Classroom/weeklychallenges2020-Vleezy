@@ -16,6 +16,9 @@ img{
 p{
     text-align:center;
 }
+.decoration{
+    font-weight: bolder;
+}
 
 @keyframes rainbow-text {
     0% {

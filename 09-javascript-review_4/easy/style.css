@@ -3,24 +3,26 @@
 }
 .container{
 display:grid;
-grid: 150px / auto;
+grid-template-columns: auto;
+
 }
 img{
     width: 100%;
 }
 .block{
-    background-color: gray;
+    animation: rainbow-text 1s infinite;
+    background-color: rgba(128, 128, 128, 0.514);
     border:2px black solid;
     color:white;
     border-top-left-radius:50%;
     border-top-right-radius:50%;
     border-top-right-radius:50%;
+
 }
-p{
-    text-align:center;
-}
+
 .decoration{
-    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
 }
 
 @keyframes rainbow-text {
@@ -177,7 +179,4 @@ p{
     100% {
       color: #e87d7d;
     }
-  }
-  .block {
-    animation: rainbow-text 1s infinite;
   }

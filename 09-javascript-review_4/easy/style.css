@@ -4,8 +4,8 @@
 .container{
 display:grid;
 grid-template-columns: auto;
-
 }
+
 img{
     width: 100%;
 }
@@ -23,6 +23,13 @@ img{
 .decoration{
     font-size: 40px;
     text-align: center;
+}
+.music{
+    display:grid;
+    justify-items: center;
+}
+audio{
+    justify-items: center;
 }
 
 @keyframes rainbow-text {

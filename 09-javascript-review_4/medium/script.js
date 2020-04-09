@@ -13,3 +13,9 @@ console.log(`New Array:`,array);
 //IndexOf()
 var index = array.indexOf(3);
 console.log(`Index of 3: ${index}`);
+}
+
+//Function
+function search(array){
+    return array.indexOf(array);
+}

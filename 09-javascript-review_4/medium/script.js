@@ -10,12 +10,17 @@ var remove2 = array.splice(4,5, 0,1,2);
 console.log(`Splice:`, remove2);
 console.log(`New Array:`,array);
 
-//IndexOf()
+//Var = IndexOf()
 var index = array.indexOf(3);
 console.log(`Index of 3: ${index}`);
-}
+
+//Console indexOf()
+console.log(indexOf(7));
 
 //Function
-function search(array){
-    return array.indexOf(array);
+function searchIndexOf(array){
+    return array.indexOf(3);
 }
+
+
+// NOT Finished still messing with code.

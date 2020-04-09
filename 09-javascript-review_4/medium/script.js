@@ -5,9 +5,9 @@ console.log(`Original Array:`, array);
 
 //Splicing to Change Array
 var remove = array.splice(0,3, 4,5,6,7);
-console.log(`Splice:`, remove)
+console.log(`Splice: ${remove}`);
 var remove2 = array.splice(4,5, 0,1,2);
-console.log(`Splice:`, remove2);
+console.log(`Splice: ${remove2}`);
 console.log(`New Array:`,array);
 
 //Var = IndexOf()
@@ -15,12 +15,13 @@ var index = array.indexOf(3);
 console.log(`Index of 3: ${index}`);
 
 //Console indexOf()
-console.log(indexOf(7));
+console.log(`Index Of 7:`, array.indexOf(7));
 
 //Function
-function searchIndexOf(array){
-    return array.indexOf(3);
-}
+// function searchIndexOf(array){
+//     return array.indexOf(3);
+// }
+
 
 
 // NOT Finished still messing with code.

@@ -17,12 +17,14 @@ console.log(`Index of 3: ${index}`);
 //Console indexOf()
 console.log(`Index Of 7:`, array.indexOf(7));
 
+//function
 Function
 function searchIndexOf(array){
-    return array.indexOf(3);
+    return array.indexOf();
 }
 
-array.indexOf(3);
+//IndexOF
+console.log(array.indexOf(3));
 
-
+console.log(array.indexOf(4));
 

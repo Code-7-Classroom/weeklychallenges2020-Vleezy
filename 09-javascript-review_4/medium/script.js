@@ -18,7 +18,6 @@ console.log(`Index of 3: ${index}`);
 console.log(`Index Of 7:`, array.indexOf(7));
 
 //function
-Function
 function searchIndexOf(array){
     return array.indexOf();
 }
@@ -28,3 +27,15 @@ console.log(array.indexOf(3));
 
 console.log(array.indexOf(4));
 
+//for loop
+var i;
+for (i = 0; i < array.length; i++) {
+  array.indexOf(7);
+}
+
+//test
+var i;
+for (i of array) {
+  array.indexOf(i);
+}
+console.log(array.indexOf(5));

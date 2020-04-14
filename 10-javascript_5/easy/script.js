@@ -1,9 +1,10 @@
 
-//for loop
 const numbers = [11,2,8,49,25,6]; //global variable
 
 const largestNumber = (values) => {
     let highest = 0; //local variable
+
+        //for loop
     for (let i=0; i<values.length; i+=1) {
         if (values[i] > highest){
             highest = values[i];

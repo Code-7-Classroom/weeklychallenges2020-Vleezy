@@ -1,11 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Very_Easy</title>
 </head>
+
 <body>
+    <section id="container" class="glitch">
+        <div class="mini__container">
+            <h1 class="glitch">
+                <div class="test"> Vladimir Romero</div>
+            </h1>
+            <p>Last login: Tue Apr 14 04:31:08 on ttys000</p>
+            <p><span class="vlad">Vlad</span>@AdminisatorsMBP <span class="grey">Desktop</span></p>
+            <p class="question"><span id="blink"> > </span><span class="question__decoration"> VERY EASY:</span> What is
+                the
+                difference between the
+                following JavaScript keywords: var, let and const. Please provide a
+                written explanation. You are able to include a code reference along with your written explanation for
+                each
+                keyword.</p>
+        </div>
+        <div class="container__inside">
+            <div class="mini__container">
+                <p class=""><span class="vlad">Vlad</span>@AdminisatorsMBP <span class="pink">(master)</span><span
+                        class="grey"> 10-javascript_5</span></p>
+                <p class="answer"><span class="answer__decoration"></span>JavaScript uses reserved keyword var to
+                    declare a
+                    variable. A
+                    variable must have a unique name. You can assign a value to a variable using equal to (=) operator
+                    when you
+                    declare
+                    it or before using it.</p>
+            </div>
+        </div>
+        <div class="conatiner__inside--second">
+            <div class="mini__container">
+                <p><span class="vlad">Vlad</span>@AdminisatorsMBP <span class="pink">(master)</span><span class="grey">
+                        10-javascript_5</span></p>
+                <p class="answer">Before the advent of ES6, var declarations were more commonly used; let is preferred
+                    for variable declaration now.</p>
+            </div>
+            <div class="mini__container">
+                <p><span class="vlad">Vlad</span>@AdminisatorsMBP <span class="pink">(master)</span><span class="grey">
+                        10-javascript_5</span></p>
+                <p class="answer">Var: Declarations are globally scoped or function/locally scoped.</p>
+            </div>
+            <div class="mini__container">
+                <p><span class="vlad">Vlad</span>@AdminisatorsMBP <span class="pink">(master)</span><span class="grey">
+                        10-javascript_5</span></p>
+                <p class="answer">Let: Similar to var; only accessible in block level it is defined.</p>
+            </div>
+            <div class="mini__container">
+                <p><span class="vlad">Vlad</span>@AdminisatorsMBP <span class="pink">(master)</span><span class="grey">
+                        10-javascript_5</span></p>
+                <p class="answer">Const: Assigned to a constant value variable; value cannot be changed. It is
+                    fixed.<span id="blink" class="blink__line">_</span></p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <style>
+        html {
+            background-color: black;
+            font-family: 'Fira Mono', monospace;
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+        p {
+            line-height: 20px;
+        }
+
+        #container {
+            display: flex-wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            font-size: 23px;
+            color: lime;
+            background-color: rgba(255, 255, 255, 0.103);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin: 150px;
+            width: 50em;
+
+        }
+
+        .test {
+            background-color: rgba(255, 255, 255, 0.281);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .glitch {
+            text-align: center;
+        }
+
+        #blink,
+        .blink__line {
+            font-weight: bolder;
+        }
+
+        #blink {
+            font-size: 30px;
+        }
+
+        .vlad {
+            color: indigo;
+        }
+
+        .pink {
+            color: pink;
+        }
+
+        .grey {
+            color: grey;
+        }
+
+        /* Blink Effect Animation */
+
+        #blink {
+            animation: blinking 1.2s infinite;
+        }
+
+        @keyframes blinking {
+            0% {
+                color: limegreen;
+            }
+
+            49% {
+                color: limegreen;
+            }
+
+            60% {
+                color: transparent;
+            }
+
+            99% {
+                color: transparent;
+            }
+
+            100% {
+                color: limegreen;
+            }
+        }
+
+        /* Glitch Effect Animation */
+
+        .glitch {
+            animation: glitch 1s linear infinite;
+        }
+
+        @keyframes glitch {
+
+            2%,
+            64% {
+                transform: translate(2px, 0) skew(0deg);
+            }
+
+            4%,
+            60% {
+                transform: translate(-2px, 0) skew(0deg);
+            }
+
+            62% {
+                transform: translate(0, 0) skew(5deg);
+            }
+        }
+
+        div:before,
+        div:after {
+            content: attr(title);
+            position: absolute;
+            left: 0;
+        }
+
+        div:before {
+            animation: glitchTop 1s linear infinite;
+            clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+        }
+
+        @keyframes glitchTop {
+
+            2%,
+            64% {
+                transform: translate(2px, -2px);
+            }
+
+            4%,
+            60% {
+                transform: translate(-2px, 2px);
+            }
+
+            62% {
+                transform: translate(13px, -1px) skew(-13deg);
+            }
+        }
+
+        div:after {
+            animation: glitchBotom 1.5s linear infinite;
+            clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+            -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+        }
+
+        @keyframes glitchBotom {
+
+            2%,
+            64% {
+                transform: translate(-2px, 0);
+            }
+
+            4%,
+            60% {
+                transform: translate(-2px, 0);
+            }
+
+            62% {
+                transform: translate(-22px, 5px) skew(21deg);
+            }
+        }
+    </style>
     <script src="script.js"></script>
 </body>
+
 </html>

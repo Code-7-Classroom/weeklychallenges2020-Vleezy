@@ -3,6 +3,6 @@ function Me(fname) {
     this.fname = 'vlad';
 }
 
-var person = new Me; 
+let person = new Me; 
 
 console.log(Me);

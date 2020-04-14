@@ -11,7 +11,20 @@
     <section id="container" class="glitch">
         <div class="mini__container">
             <h1 class="glitch">
-                <div class="test"> Vladimir Romero</div>
+                <div class = "test">
+                <div class ="buttons">
+                <ul>
+                    <li class="red"></li>
+                    <li class="yellow"></li>
+                    <li class="green"></li>
+                </ul>
+            </div>
+            <div class="test2">
+            <div class="name">
+                <div> Vladimir Romero</div>
+            </div>
+            </div>    
+            </div>
             </h1>
             <p>Last login: Tue Apr 14 04:31:08 on ttys000</p>
             <p><span class="vlad">Vlad</span>@AdminisatorsMBP <span class="grey">Desktop</span></p>
@@ -75,26 +88,49 @@
         }
 
         #container {
-            display: flex-wrap;
-            justify-content: center;
-            align-items: center;
+            /* display: flex-wrap; */
+            /* justify-content: center;
+            align-items: center; */
             text-align: left;
-            font-size: 23px;
+            /* font-size: 23px; */
             color: lime;
             background-color: rgba(255, 255, 255, 0.103);
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
-            margin: 150px;
+            margin: 300px;
             width: 50em;
 
         }
 
         .test {
+            display:flex;
+            justify-content: space-between;
             background-color: rgba(255, 255, 255, 0.281);
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
-
+        .test2{
+            float:left;
+            display:flex;
+            align-items: center;
+        }
+        li{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            list-style: none;
+            padding:2px;
+            margin:5px;
+            
+           
+        }
+        ul{
+            display:flex;
+            justify-content: space-between;
+        }
+        .name{
+            
+        }
         .glitch {
             text-align: center;
         }
@@ -119,7 +155,16 @@
         .grey {
             color: grey;
         }
-
+        .red{
+            background-color: rgb(255, 58, 58);
+        }
+        .yellow{
+            background-color: rgb(255, 251, 1);
+        }
+        .green{
+            background-color: rgb(0, 128, 17);
+        }
+        
         /* Blink Effect Animation */
 
         #blink {

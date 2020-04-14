@@ -20,11 +20,12 @@
                 </ul>
             </div>
             <div class="test2">
-            <div class="name">
+                <img class = "logo" src="Folder-icon.png" alt="folder">
+                <div class="name">
                 <div> Vladimir Romero</div>
             </div>
-            </div>    
             </div>
+            </div>    
             </h1>
             <p>Last login: Tue Apr 14 04:31:08 on ttys000</p>
             <p><span class="vlad">Vlad</span>@AdminisatorsMBP <span class="grey">Desktop</span></p>
@@ -86,6 +87,11 @@
         p {
             line-height: 20px;
         }
+        img{
+            width:28px;
+            height:28px;
+            margin-left: 90px;
+        }
 
         #container {
             /* display: flex-wrap; */
@@ -101,16 +107,18 @@
             width: 50em;
 
         }
-
-        .test {
+        .container__test{
             display:flex;
             justify-content: space-between;
+        }
+        .test {
+            display:flex;
+            justify-content: flex-start;
             background-color: rgba(255, 255, 255, 0.281);
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
         .test2{
-            float:left;
             display:flex;
             align-items: center;
         }
@@ -129,7 +137,7 @@
             justify-content: space-between;
         }
         .name{
-            
+            margin-left: 5px;
         }
         .glitch {
             text-align: center;

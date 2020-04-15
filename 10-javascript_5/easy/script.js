@@ -20,7 +20,7 @@ console.log(largestNumber(numbers));
 //Simpler 
 
 const numbers = [1,2,3];
-///ES6 spread operator "..."
+//ES6 spread operator "..."
 console.log(Math.max(...numbers));
 
 */

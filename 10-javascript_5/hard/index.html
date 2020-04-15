@@ -27,24 +27,30 @@
         .bg-white {
             background-color: white;
         }
+       
     </style>
 </head>
 
 <body>
-    <button> Turn it red! </button>
-    <button> Turn it white! </button>
+    <button id="color__red">Turn it red! </button>
+    <button id="color__white"> Turn it white! </button>
     <script>
  
         // Do Stuff Here
+let btnRed = document.querySelector('#color__red');
+let btnWhite = document.querySelector('#color__white');
 
-        window.updateTheBackground = function (className) {
+btnRed.addEventListener('click', () => btnRed.style.backgroundColor='#FF0000' )
+// Couldn't see the white so i made it blue.
+btnWhite.addEventListener('click', () => btnWhite.style.backgroundColor='blue' )
 
-
-
-        }
+        // window.updateTheBackground = function (className) {
+        // }
 
     </script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
+<!--Still working on this problem i think i did it wrong lmao-->

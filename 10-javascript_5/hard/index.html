@@ -17,7 +17,13 @@
         }
 
         button {
-            padding: 10px;
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            color: white;
+            background-color: grey;
+            border-radius: 100px;
+            outline:none;
         }
 
         .bg-red {
@@ -27,28 +33,50 @@
         .bg-white {
             background-color: white;
         }
+        
+        .container{
+            display: flex; 
+            flex-direction: row;
+            justify-content: space-around ; 
+            align-items: center; 
+            width:100%;
+            height:100%;
+            text-align: center; 
+        }
         html{
-            background-color: green;
+            background-color: black;
         }
        
     </style>
 </head>
 
 <body>
-    <button id="color__red">Turn it red! </button>
-    <button id="color__white"> Turn it white! </button>
+    <div class="container">
+        <div class="mini__container--one">
+    <button id="bg-red" onclick ="changeColor('bg-red')">Turn it red! </button>
+        </div> 
+        <div class="mini__container--two">
+    <button id="bg-white" onclick ="changeColor('bg-white')"> Turn it white! </button>
+        </div>
+    </div>
     <script>
  
         // Do Stuff Here
-let btnRed = document.querySelector('#color__red');
-let btnWhite = document.querySelector('#color__white');
+// let btnRed = document.querySelector('html');
+// let btnWhite = document.querySelector('html');
+// btnRed.addEventListener('click', () => btnRed.style.backgroundColor='red' );
+// btnWhite.addEventListener('click', () => btnWhite.style.backgroundColor='white' );
 
-btnRed.addEventListener('click', () => btnRed.style.backgroundColor='red' )
+function changeColor(className){
+    var body = document.querySelector('html');
+    
+    while(body.classList.length > 0){
+        console.log('removing class ' + body.classList.item(0))
+      body.classList.remove(body.classList.item(0));
+    }
+    body.classList.add(className);
+  }
 
-btnWhite.addEventListener('click', () => btnWhite.style.backgroundColor='blue' )
-
-        // window.updateTheBackground = function (className) {
-        // }
 
     </script>
     <script src="script.js"></script>
@@ -56,4 +84,3 @@ btnWhite.addEventListener('click', () => btnWhite.style.backgroundColor='blue' )
 </body>
 
 </html>
-<!--Still working on this problem i think i did it wrong lmao-->

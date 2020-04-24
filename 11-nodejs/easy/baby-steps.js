@@ -1,7 +1,7 @@
 // ## BABY STEPS (Exercise 2 of 13)  
-let result = 0;
+let ans = 0;
 for (i = 2; i < process.argv.length; i++) {
-  result += Number(process.argv[i]);
+  ans += Number(process.argv[i]);
 }
 
-console.log(result);
+console.log(ans);

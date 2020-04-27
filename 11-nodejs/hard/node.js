@@ -3,19 +3,19 @@ const app = express();
 
 const employees = [
     {id: 1, name: 'Bob', salary: 5000, building: "A"},
-    {id: 2, name: 'Bill', salary: 5000, building: "A"},
-    {id: 3, name: 'Ben', salary: 5000, building: "A"},
-    {id: 4, name: 'Beth', salary: 5000, building: "A"},
-    {id: 5, name: 'Betty', salary: 5000, building: "A"},
-    {id: 6, name: 'Boe', salary: 5000, building: "A"},
-    {id: 7, name: 'Blake', salary: 5000, building: "A"},
-    {id: 8, name: 'Brook', salary: 5000, building: "A"},
-    {id: 9, name: 'Beatrice', salary: 5000, building: "A"},
-    {id: 10, name: 'Bella', salary: 5000, building: "A"}
+    {id: 2, name: 'Bill', salary: 6000, building: "A"},
+    {id: 3, name: 'Ben', salary: 5500, building: "A"},
+    {id: 4, name: 'Beth', salary: 7000, building: "A"},
+    {id: 5, name: 'Betty', salary: 8000, building: "A"},
+    {id: 6, name: 'Boe', salary: 6500, building: "A"},
+    {id: 7, name: 'Blake', salary: 9000, building: "A"},
+    {id: 8, name: 'Brook', salary: 4000, building: "A"},
+    {id: 9, name: 'Beatrice', salary: 3500, building: "A"},
+    {id: 10, name: 'Bella', salary: 9000, building: "A"}
 ];
 
 app.get('/', (req, res) => {
-    res.send('Hello world');
+    res.send('Hard Challenge NodeJS');
 });
 
 app.get('/employees', (req, res) => {

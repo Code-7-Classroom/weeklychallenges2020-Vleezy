@@ -17,7 +17,7 @@ const employees = [
     {id: 10, name: 'Bella', salary: 9000, building: "B"}
 ];
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.send('Hard Challenge NodeJS');
 });
 

@@ -1,14 +1,23 @@
 // ## FILTERED LS (Exercise 5 of 13) 
-var fs = require('fs');
+const fs = require('fs');
+const path = require('path');
 
-var dirname = process.argv[2];
-var ext = process.argv[3];
-var pat = RegExp('\\.' + ext + '$');
+if(process.argv.length < 4) {
+    console.log('Please specify a path and a filter parameter');
+    return;
+}
 
-file = fs.readdir(dirname, function(err, files) {
-  for (i = 0; i < files.length; i++) {
-    if (pat.test(files[i])) {
-      console.log(files[i]);
+fs.readdir(process.argv[2], (error, fileList) => {
+    if(error) {
+        console.error(error);
+        return;
     }
-  }
+
+    const filteredFiles = fileList.filter((file) => {
+        return path.extname(file) === '.' + process.argv[3];
+    });
+
+    filteredFiles.forEach((file) => {
+        console.log(file);
+    });
 });

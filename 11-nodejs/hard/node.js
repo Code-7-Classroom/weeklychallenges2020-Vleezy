@@ -66,7 +66,7 @@ let express = require('express')
 let app = express()
 let data = require('../hard/employees.json')
 app.get('/test', function(req,res){
-    res.send("Hi Class")
+    res.send("Hello World")
 })
 app.get('/employees', (req,res) => {
     if(!data){

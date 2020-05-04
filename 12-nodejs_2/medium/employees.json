@@ -1,0 +1,14 @@
+{
+    "employee":[
+    {"id": 1, "name": "Bob", "salary": 5000, "building": "A"},
+    {"id": 2, "name": "Bill", "salary": 6000, "building": "A"},
+    {"id": 3, "name": "Ben", "salary": 5500, "building": "B"},
+    {"id": 4, "name": "Beth", "salary": 7000, "building": "A"},
+    {"id": 5, "name": "Betty", "salary": 8000, "building": "A"},
+    {"id": 6, "name": "Boddy", "salary": 6500, "building": "C"},
+    {"id": 7, "name": "Blake", "salary": 9000, "building": "C"},
+    {"id": 8, "name": "Brook", "salary": 4000, "building": "B"},
+    {"id": 9, "name": "Beatrice", "salary": 3500, "building": "A"},
+    {"id": 10, "name": "Bella", "salary": 9000, "building": "B"}
+    ]
+}

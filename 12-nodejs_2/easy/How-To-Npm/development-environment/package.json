@@ -1,14 +1,23 @@
 {
   "name": "@vlad/development-environment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Welcome Visitors,",
   "dependencies": {
     "@linclark/pkg": "^1.0.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-7-Classroom/weeklychallenges2020-Vleezy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Code-7-Classroom/weeklychallenges2020-Vleezy/issues"
+  },
+  "homepage": "https://github.com/Code-7-Classroom/weeklychallenges2020-Vleezy#readme"
 }

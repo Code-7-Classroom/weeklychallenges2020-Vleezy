@@ -9,7 +9,7 @@
   "license": "ISC",
   "description": "Welcome Visitors,",
   "dependencies": {
-    "@linclark/pkg": "^1.0.2"
+    "@linclark/pkg": "^1.0.3"
   },
   "devDependencies": {},
   "repository": {

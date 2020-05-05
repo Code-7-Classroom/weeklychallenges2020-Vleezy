@@ -12,8 +12,8 @@ app.get('/employees', (req,res) => {
     res.send(data)
 })
 app.get('/employees/:id', function (req,res){
-    const sData = data.employees.find(function(employees){
-        return parseInt(req.params.id) === employees.id
+    const sData = data.employees.find(function(employee){
+        return parseInt(req.params.id) === employee.id
     })
     if(!sData){
         res.status(404).send(`INVALID EMPLOYEE ID`)

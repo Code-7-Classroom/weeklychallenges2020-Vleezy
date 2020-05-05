@@ -24,11 +24,8 @@ app.get('/employees/:id', function (req, res) {
 })
 app.post('/employees', (req, res) => {
     const { error } = validateEmployees(req.body);
-if(error){
-    res.status(400).send(error.detail[0].message);
-    return;
-}
-    
+    if (error) return res.status(400).send(error.detail[0].message);
+
     const employees = {
         id: employees.length + 1,
         name: req.body.name
@@ -37,29 +34,34 @@ if(error){
     res.send(employees);
 });
 app.put('/employees/:id', (req, res) => {
-const employees = employees.find(c => c.id === parseInt(req.params.id));
-if (!employees) res.status(404).send('EMPLOYEE WITH ID NOT FOUND')
+    const employees = employees.find(c => c.id === parseInt(req.params.id));
+    if (!employees) return res.status(404).send('EMPLOYEE WITH ID NOT FOUND')
+    
+    const { error } = validateEmployees(req.body);
+    if (error) return res.status(400).send(error.detail[0].message);
 
-
-const { error } = validateEmployees(req.body);
-if(error){
-    res.status(400).send(error.detail[0].message);
-    return;
-}
-
-employees.name = req.body.name
-res.send(employees)
+    employees.name = req.body.name
+    res.send(employees)
 
 });
 
-function validateEmployees(employees)
-let schema = {
-    name: Joi.string().min(3).required()
+function validateEmployees(employees) {
+    let schema = {
+        name: Joi.string().min(3).required()
+    };
+
+    return Joi.validate(employees, schema);
 };
 
-return Joi.validate(employees, schema);
+app.delete('/employees/:id', (req, res) => {
+    const employees = employees.find(c => c.id === parseInt(req.params.id));
+    if (!employees) return res.status(404).send('EMPLOYEE WITH ID NOT FOUND')
 
+    employees.index = employees.indexOf(employees);
+    employees.splice(index, 1);
 
+    res.send(employees);
+});
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {

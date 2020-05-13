@@ -1,6 +1,8 @@
-# Vladimir Romero's GitHub Assignment Repository
+![Vlad Logo](https://github.com/Code-7-Classroom/weeklychallenges2020-Vleezy/blob/master/logo-readme.png)
+
+# GitHub Assignment Repository
   [My Repository](https://github.com/Code-7-Classroom/weeklychallenges2020-Vleezy) - Link to my repository.
-  
+
 ## Getting Started
 
 I will be submitting all my assignments, checkpoints, and challenges in this repository.

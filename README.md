@@ -5,6 +5,7 @@
 ## Getting Started
 
 I will be submitting all my assignments, checkpoints, and challenges in this repository.
+- [x] Continuing to study, practice, and learn everyday!
 
 ## Languages Used
 

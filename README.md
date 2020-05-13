@@ -1,5 +1,5 @@
 # Vladimir Romero's GitHub Assignment Repository
-  *[My Repository](https://github.com/Code-7-Classroom/weeklychallenges2020-Vleezy) 
+  [My Repository](https://github.com/Code-7-Classroom/weeklychallenges2020-Vleezy) - Link to my repository.
   
 ## Getting Started
 

@@ -2,10 +2,18 @@
 # GitHub Assignments
   [My Repository](https://github.com/Code-7-Classroom/weeklychallenges2020-Vleezy) - Link to my repository.
 
+```json
+{
+  "firstName": "Vladimir",
+  "lastName": "Romero",
+}
+```
+
 ## Getting Started
 
 I will be submitting all my assignments, checkpoints, and challenges in this repository.
 - [x] Continuing to study, practice, and learn everyday!
+
 
 ## Languages Used
 

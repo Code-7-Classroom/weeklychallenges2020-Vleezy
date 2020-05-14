@@ -5,7 +5,7 @@
 ```json
 {
   "firstName": "Vladimir",
-  "lastName": "Romero",
+  "lastName": "Romero"
 }
 ```
 

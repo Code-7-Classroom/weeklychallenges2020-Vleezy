@@ -9,7 +9,7 @@ class BasicInfo extends Component {
             <ul>
                 {this.props.person.map(info => (
                     <div className="person">
-                        <li>Name: {info.Name}</li>
+                        <li className="top">Name: {info.Name}</li>
                         <li>Phone: {info.Phone}</li>
                         <li>Date of Birth: {info.DOB}</li>
                     </div>

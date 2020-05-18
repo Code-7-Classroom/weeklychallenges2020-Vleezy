@@ -11,8 +11,8 @@ class App extends Component {
     this.state = {
       person: [
         { Name: 'Vlad', Phone: '123-123-1234', DOB: '01/02/2000' },
-        { Name: 'Vlad1', Phone: '123-123-1234', DOB: '01/02/2000' },
-        { Name: 'Vlad2', Phone: '123-123-1234', DOB: '01/02/2000' }
+        { Name: 'Vladimir', Phone: '123-123-1234', DOB: '01/02/2000' },
+        { Name: 'Vladimir Romero', Phone: '123-123-1234', DOB: '01/02/2000' }
       ]
     }
   }

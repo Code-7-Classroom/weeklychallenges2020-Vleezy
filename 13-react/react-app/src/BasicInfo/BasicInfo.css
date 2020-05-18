@@ -3,12 +3,14 @@ background-color: rgba(0, 0, 0, 0.473);
 color:white;
     width: 60%;
     margin:16px auto;
-    border: 5px double #eee;
     box-shadow: 0 2px 5px #eee;
     padding:16px;
     text-align: center;
-    border-radius: 100px;
-           
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom: dotted 10px rgba(0, 0, 0, 0.473);
+    border-top-right-radius: 80%;
+    border-bottom-left-radius: 80%;
 }
 .person:hover{
     box-shadow:
@@ -20,9 +22,23 @@ color:white;
         0 0 50px #fff,           
         -10px 0 80px black,        
         10px 0 80px black; 
+        color:black;
+/* Testing Stuff */
+            position: relative; 
+            animation: testingstuff 5s 2;
+            animation-direction: alternate;
+          
+}
+          @keyframes testingstuff {
+            0%   {background: red; left: 0px; top: 0px;}
+            25%  {background: yellow; left: 200px; top: 0px;}
+            50%  {background: blue; left: -200px; top: 0px;}
+            75%  {background: green; left: 200px; top: 0px;}
+            100% {background: red; left: 0px; top: 0px;}
+          
 }
 html{
-    background-color: rgba(112, 112, 112, 0.39);
+    background-color: rgba(0, 0, 0, 0.425);
     color:black;
     
 }

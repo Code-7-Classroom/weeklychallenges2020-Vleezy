@@ -31,6 +31,8 @@ class App extends Component {
 
   render() {
     return (
+     
+        
       //   <div className="App">
       // <h1> Hi, I'm a React App!</h1>
       /* <button onClick={this.switchNameHandler}>Show Information</button> */
@@ -38,6 +40,7 @@ class App extends Component {
       <BasicInfo name={this.state.person[1].name} phone={this.state.person[1].phone} dob={this.state.person[0].dob}/>
       <BasicInfo name={this.state.person[2].name} phone={this.state.person[2].phone} dob={this.state.person[0].dob} /> */
       <BasicInfo person={this.state.person} />
+        
     )
   }
 }

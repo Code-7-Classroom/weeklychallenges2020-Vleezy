@@ -5,14 +5,15 @@ import BasicInfo from './BasicInfo/BasicInfo';
 // import { render } from '@testing-library/react';
 
 class App extends Component {
+  
   constructor(props) {
     super(props);
 
     this.state = {
       person: [
-        { Name: 'Vlad', Phone: '123-123-1234', DOB: '01/02/2000' },
-        { Name: 'Vladimir', Phone: '123-123-1234', DOB: '01/02/2000' },
-        { Name: 'Vladimir Romero', Phone: '123-123-1234', DOB: '01/02/2000' }
+        { Name: 'Vlad', Phone: '123-123-1234', DOB: '01/02/2001' },
+        { Name: 'Vladimir', Phone: '123-123-1234', DOB: '01/02/1994' },
+        { Name: 'Vladimir Romero', Phone: '123-123-1234', DOB: '01/02/2005' }
       ]
     }
   }

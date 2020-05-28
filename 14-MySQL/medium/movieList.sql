@@ -18,7 +18,7 @@ INSERT INTO movies(titleName, releaseDate, rating ,id) VALUES
 ('Invisible', '2005-06-11', 10, 9),('Dark Matter', '2017-12-13', 10, 10);
 
 
-SELECT titleNAme FROM movies
+SELECT titleName FROM movies
 WHERE titleName LIKE '%s%';
 
 

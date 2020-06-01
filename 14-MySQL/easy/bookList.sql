@@ -16,8 +16,11 @@ INSERT INTO book(titleName, firstName, lastName, publishDate, id) VALUES
 ('The Great Gatsby','F.Scott', 'Fitzgerald', '1925-04-10' ,5);
 
 INSERT INTO book(titleName, firstName, lastName, publishDate, id) VALUES 
-('The Cat in the Hat', 'Dr.Suess','null', '03-12-1957', '6'),('Green Eggs and Ham', 'Dr.Suess','null', '08-12-1960', '7');
+('The Cat in the Hat', 'Dr.Suess','null', '1957-12-03', 6),('Green Eggs and Ham', 'Dr.Suess',null, '1960-08-12', 7);
+
+DELETE from book WHERE publishDate = '1925-04-10';
 
 SELECT*FROM book;
+
 
 

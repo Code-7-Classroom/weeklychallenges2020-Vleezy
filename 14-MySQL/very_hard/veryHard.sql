@@ -8,15 +8,32 @@ DROP DATABASE IF EXISTS carList2;
 CREATE DATABASE carList2;
 
 USE carList2;
-CREATE TABLE cars (
+CREATE TABLE cars2 (
 id INT AUTO_INCREMENT PRIMARY KEY,
 carMake VARCHAR(255),
 carModel VARCHAR(255),
-carYear INT,
-carPrice INT,
-carColor VARCHAR(255)
+carYear INT
 );
 
-INSERT INTO cars(carMake, carModel, carYear, id) VALUES ('Honda','Accord',2010 ,1),('Honda','Civic', 2012, 2),('Honda','CR-V', 2009 ,3);
+INSERT INTO cars2(carMake, carModel, carYear, id) VALUES ('Honda','Accord',2010 ,1),('Honda','Civic', 2012, 2),('Honda','CR-V', 2009 ,3);
+
+ALTER TABLE cars2 ADD carPrice INT;
+ALTER TABLE cars2 ADD carColor VARCHAR(255);
+
+UPDATE cars2 SET carPrice = 24020 WHERE carModel = "Accord";
+UPDATE cars2 SET carPrice = 19850 WHERE carModel = "Civic";
+UPDATE cars2 SET carPrice = 250250 WHERE carModel = "CR-V";
+
+UPDATE cars2 SET carColor = 'Black' WHERE id = 1;
+UPDATE cars2 SET carColor = 'White' WHERE id = 2;
+UPDATE cars2 SET carColor = 'Orange' WHERE id = 3;
+
+SELECT CONCAT(carMake , ' ' , carModel) AS carType FROM cars2;
+
+ALTER TABLE cars2
+ADD COLUMN sameMake VARCHAR(255) NOT NULL;
+INSERT "";
+
+SELECT*FROM carModel;
 
 SELECT*FROM cars;

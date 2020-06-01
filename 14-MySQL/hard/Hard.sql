@@ -15,19 +15,30 @@ CREATE TABLE movies2 (
 id INT AUTO_INCREMENT PRIMARY KEY,
 titleName VARCHAR(255),
 releaseDate DATE,
-rating INT
+rating INT,
+firstName VARCHAR(255),
+lastName VARCHAR(255)
 );
 
-INSERT INTO movies2(titleName, releaseDate, rating ,id) VALUES 
-('Scooby Doo', '2010-11-08', 3, 1),('Batman', '2020-07-30', 4, 2),
-('Superman', '2020-09-07', 5, 3),('Scream', '1997-06-13', 3, 4),
-('Sonic', '2018-02-09', 7, 5),('Pokemon', '1994-12-08', 9, 6),
-('Digimon', '1992-04-14', 6, 7),('Titanic', '1990-06-21', 10, 8),
-('Invisible', '2005-06-11', 10, 9),('Dark Matter', '2017-12-13', 10, 10);
+INSERT INTO movies2(firstName, lastName, titleName, releaseDate, rating ,id) VALUES 
+("Billy","Bobz" ,'Scooby Doo', '2010-11-08', 3, 1),("Jim","Bo",'Batman', '2020-07-30', 4, 2),
+("Fred","Turner",'Superman', '2020-09-07', 5, 3),("Tim","Bill",'Scream', '1997-06-13', 3, 4),
+("Joe","Cool",'Sonic', '2018-02-09', 7, 5),("Tom","Green",'Pokemon', '1994-12-08', 9, 6),
+("Glen","Go",'Digimon', '1992-04-14', 6, 7),("Chris","White",'Titanic', '1990-06-21', 10, 8),
+("Gary","Blue",'Invisible', '2005-06-11', 10, 9),("Ben","Green",'Dark Matter', '2017-12-13', 10, 10);
 
+SELECT CONCAT(firstName , ' ' , lastName) AS fullName FROM movies2;
+
+SELECT*FROM movies2
+ORDER BY lastName ASC;
 
 SELECT titleName FROM movies2
 WHERE titleName LIKE '%s%';
+
+DELETE FROM movies2 WHERE lastName REGEXP '[R-Z]$';
+SELECT*FROM movies2;
+
+SELECT*FROM movies2 LIMIT 3;
 
 
 SELECT*FROM movies2;

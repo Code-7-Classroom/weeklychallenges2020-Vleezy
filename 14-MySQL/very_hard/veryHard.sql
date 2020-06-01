@@ -20,19 +20,25 @@ INSERT INTO cars2(carMake, carModel, carYear, id) VALUES ('Honda','Accord',2010 
 ALTER TABLE cars2 ADD carPrice INT;
 ALTER TABLE cars2 ADD carColor VARCHAR(255);
 
-UPDATE cars2 SET carPrice = 24020 WHERE carModel = "Accord";
-UPDATE cars2 SET carPrice = 19850 WHERE carModel = "Civic";
-UPDATE cars2 SET carPrice = 250250 WHERE carModel = "CR-V";
+UPDATE cars2 SET carPrice = 24020 
+WHERE carModel = "Accord";
+UPDATE cars2 SET carPrice = 19850 
+WHERE carModel = "Civic";
+UPDATE cars2 SET carPrice = 250250 
+WHERE carModel = "CR-V";
 
-UPDATE cars2 SET carColor = 'Black' WHERE id = 1;
-UPDATE cars2 SET carColor = 'White' WHERE id = 2;
-UPDATE cars2 SET carColor = 'Orange' WHERE id = 3;
+UPDATE cars2 SET carColor = 'Black' 
+WHERE id = 1;
+UPDATE cars2 SET carColor = 'White' 
+WHERE id = 2;
+UPDATE cars2 SET carColor = 'Orange' 
+WHERE id = 3;
 
 SELECT CONCAT(carMake , ' ' , carModel) AS carType FROM cars2;
 
-ALTER TABLE cars2
-ADD COLUMN sameMake VARCHAR(255) NOT NULL;
-INSERT "";
+SELECT carMake, COUNT(carMake) FROM cars2
+GROUP BY carMake HAVING COUNT(carMake) > 1;
+
 
 SELECT*FROM carModel;
 

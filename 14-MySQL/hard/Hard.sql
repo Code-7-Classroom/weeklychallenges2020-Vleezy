@@ -1,4 +1,11 @@
 -- TO BE CONTINUED HARD
+-- Hard: Make a copy of your Medium Challenge 
+-- Write out the queries that would add the director’s First Name and Last Name into two separate columns. 
+-- Create a query that puts the names together. 
+-- Create a query to put the list in alphabetical order by the last name from A-Z 
+-- After you order the list, remove the Movies where the Last Name ends with ”R-Z” 
+-- Write a query where the first three appear
+
 DROP DATABASE IF EXISTS movieList2;
 CREATE DATABASE movieList2;
 DROP TABLE IF EXISTS movies2;

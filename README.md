@@ -2,12 +2,6 @@
 # GitHub Assignments
   [My Repository](https://github.com/Code-7-Classroom/weeklychallenges2020-Vleezy) - Link to my repository.
 
-```json
-{
-  "firstName": "Vladimir",
-  "lastName": "Romero"
-}
-```
 
 ## Getting Started
 
